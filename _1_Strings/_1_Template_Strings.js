@@ -1,5 +1,13 @@
-console.log(" --------------  Template Strings  --------------")
+class _1_1_ {
+  constructor() { 
+    this.Run();
+  }
 
+  Run () {
+    console.log("1.1. Template Strings")
+    
+  }
+}
 
 var name = "Kyle Simpson";
 var email = "getify@gmail.com";
@@ -22,28 +30,12 @@ var o = { a: 1, b: [2,3,4] };
 logger`This is my value ${v} and another: ${o}`
 
 try {
-  nothing();
+  nothing()
 }
 catch(err) {
   logger`Caught: ${err}`;
 }
 
-
-function formatCurrency(strings,...value) {
-  var str = "";
-  for (let i = 0; i < strings.length; i++) {
-    if(i > 0) {
-      if(typeof values[i-1] == "number") {
-        str += `${values[i-1].toFixed(2)}`;
-      }
-      else {
-        str += values[i-1];
-      }
-    }
-    str += strings[i]
-  }
-  return str;
-}
 
 function logger(strings, ...values) {
   var str = "";
@@ -72,5 +64,18 @@ function logger(strings, ...values) {
   return str;
 }
 
-console.log("")
-console.log("")
+function formatCurrency(strings,...value) {
+  var str = "";
+  for (let i = 0; i < strings.length; i++) {
+    if(i > 0) {
+      if(typeof values[i-1] == "number") {
+        str += `${values[i-1].toFixed(2)}`;
+      }
+      else {
+        str += values[i-1];
+      }
+    }
+    str += strings[i]
+  }
+  return str;
+}

@@ -1,5 +1,17 @@
 console.log(" --------------  Destructuring Declarative  --------------")
 
+function getSomeRecords() {
+  return [
+    {
+      'name': "Marc",
+      'email': "marcromotarre@gmail.com"
+    },
+    {
+      'name': 'Laia'
+    }
+  ]
+}
+
 var [
   {
     name: firstName,
@@ -11,14 +23,10 @@ var [
   }
 ] = getSomeRecords();
 
-var tmp = getSomeRecords();
 
+console.log(firstName,firstEmail)
+console.log(secondName,secondEmail)
 
-
-var first = tmp[0];
-var second = tmp[1];
-
-console.log(tmp)
 
 console.log("")
 console.log("")
